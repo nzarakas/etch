@@ -1,0 +1,20 @@
+#container {
+    width : 960px;
+    height: 638px;
+
+    border: thin solid black;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+}
+
+.grid {
+    user-select: none;
+    height: 20px;
+    width: 20px;
+    
+    border: 1px solid #231233;
+    margin: 0;
+    color: black;
+    background-color: white;
+}
