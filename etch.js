@@ -74,38 +74,3 @@ btn.addEventListener("click", ()=>{
 body.insertBefore(btn,container);
 
 
-// btn.addEventListener("click", ()=>{
-//     container.removeChild(gridBlock);
-// })
-// console.log(rows);
-// for(let i = 0; i<rows*rows;i++){
-//     const gridBlock = document.createElement("div");
-//     gridBlock.classList.add("grid");
-//     container.appendChild(gridBlock);  
-// }
-
-// body.insertBefore(btn,container);
-
-
-// const blocks = document.querySelectorAll(".grid");
-
-// let isMouseDown = false;
-
-// document.addEventListener("mousedown", (e)=>{
-//         if(e.button === 0){
-//             isMouseDown = true;
-//         }
-//     });
-// document.addEventListener("mouseup",() =>{
-//         isMouseDown = false;
-//     });
-
-
-// blocks.forEach(block => {
-//     block.addEventListener("mouseover", () =>{
-//         if (isMouseDown) {
-//             block.style.backgroundColor = 'black';   
-//             }
-//         }
-//    )
-// })
