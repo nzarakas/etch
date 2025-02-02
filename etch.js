@@ -1,13 +1,7 @@
 const body = document.querySelector("body");
-
-const btn = document.createElement("button");
-btn.textContent = "press me!"
-
-
-
+const btn = document.querySelector("button")
 const container = document.querySelector("#container");
-// let rows = 0 ;
-// let columns = 0 ; 
+
 
 
 btn.addEventListener("click", ()=>{
@@ -33,10 +27,10 @@ btn.addEventListener("click", ()=>{
 
     for(let i = 0; i<rows*columns;i++){
         const gridBlock = document.createElement("div");
-        gridBlock.id = `${i+1}`;
+        
         gridBlock.classList.add("grid");
-        gridBlock.style.width = gridBlockWidth + "px";
-        gridBlock.style.height = gridBlockHeight + "px";
+        gridBlock.style.width = gridBlockWidth-1 + "px";
+        gridBlock.style.height = gridBlockHeight-1 + "px";
         container.appendChild(gridBlock);  
     }
     
@@ -44,13 +38,20 @@ btn.addEventListener("click", ()=>{
     // This part is about clicking on a grid tile and changing its colour
     // effectively playing the etch a sketch game
     const blocks = document.querySelectorAll(".grid");
-    
-
     let isMouseDown = false;
+
+    function ColorTheGrid(block){
+        block.style.borderStyle = 'none';
+        block.style.width = gridBlockWidth + 'px';        
+        block.style.height = gridBlockHeight + 'px';
+        block.style.backgroundColor = 'black';
+    }
+
 
     document.addEventListener("mousedown", (e)=>{
         if(e.button === 0){
             isMouseDown = true;
+            ColorTheGrid(block);
         }
     });
     document.addEventListener("mouseup",() =>{
@@ -58,14 +59,13 @@ btn.addEventListener("click", ()=>{
     });
 
 
-    blocks.forEach(block => {
-        //block.style.backgroundColor = 'white';
+    blocks.forEach(block => {  
         block.addEventListener("mouseover", () =>{
             if (isMouseDown) {
-                block.style.backgroundColor = 'black';
+                ColorTheGrid(block);       
             }
         }
-    )
+        )
 
     })
 
