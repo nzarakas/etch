@@ -8,9 +8,34 @@
     <script src="etch.js" defer></script>
 </head>
 <body>
-    <div id="options"></div>
-        <button>Click me!</button>
-    <div id="container"></div>
+    <div id="options">
+        <!--Add slider that a user selects number of rows for the grid-->
+        <label for="slider">Select number of Rows </label>
+        <label for="slider">in Grid (1 to 100):</label>
+        <!-- <label for="slider">Select number of Rows in Grid (1 to 100):</label> -->
+        <input type="range" id="slider" name="slider"
+         min="1" max="100" value="40">
+        <span id="output">40</span>
+        <div id="modeContainer">
+            <div id="mode">Select mode:</div>
+            <button id="black">Black & White</button>
+
+            <button id="selectColor">Choose Color</button>
+            <input type="color" id="inputColor">
+
+            <button id="rainbow">Taste the Rainbow!</button>
+        </div>
+        
+        <!--Button that starts the grid after options have been selected-->
+        <button id="launchGame">Start new grid</button>
+        
+        
+    </div>
+    <div id="outerContainer">
+        <div id="container"></div>
+        <div id="etchText">ETCH A SKETCH</div>
+    </div>
+    
     
 </body>
 </html>

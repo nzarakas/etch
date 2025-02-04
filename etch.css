@@ -1,27 +1,143 @@
+@font-face {
+    font-family: 'Golden Age Shad';
+    src: url('/home/monocube/.local/share/fonts/Golden Age.ttf') format('truetype');
+}
+
 body {
-    
+    /*Adding flex is ruining my grid showing borders between black tiles*/
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-around; */
+    align-items: center;
     width: 95vw;
     height: 95vh;
     margin: 10px;
+    background-image: url('testBackground3.svg');
+    font-family: 'Golden Age Shad', 'Times New Roman', Times, serif;
+}
+#options {
+    box-shadow: 4px 4px 10px #333;
+    background-color: rgb(192, 185, 185);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    height: 55vh;
+    gap: 15px;
+    margin-left: 130px;
+    margin-right: 160px;
+    border: 4px solid black;
+}
+#modeContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
 }
 
+#launchGame {
+    /* height: 35px;
+    width: 125px; */
+    height: 50px;
+    width: 145px;
+    background-color: #ff9100;
+}
+
+/* Slider css */
+input[type="range"] {
+    -webkit-appearance: none;
+    appearance: none;
+    background: transparent;
+    width: 80%;
+    opacity: 1;
+    -webkit-transition: .1s;
+    transition: opacity .1s;
+}
+input[type="range"]:hover{
+    opacity: 0.9;
+}
+input[type="range"]::-webkit-slider-runnable-track {
+    background: #ffffff ;
+    height: 15px;  
+  }
+  
+input[type="range"]::-webkit-slider-thumb {
+    background: rgb(5, 255, 159) ;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    -webkit-appearance: none;   
+    margin: -2px;
+    position: relative;  
+  }
+
+#inputColor {
+    display: none;
+}
+
+label {
+    padding: 0 20px;
+ }
+button{
+    background-color: rgb(251, 255, 0);
+    font-family: 'Golden Age', serif;
+    height: 35px;
+    width: 125px;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    border-bottom: 4px solid black;
+    border-right: 4px solid black;
+}
+button:active {
+    transform: scale(0.98);
+    /* background-color: rgb(251,255, 0.5); */
+    border-top: 2px solid black;
+    border-left: 2px solid black;
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+    /* Scaling button to 0.98 to its original size */
+    /* box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24); */
+    /* Lowering the shadow */
+}
+#outerContainer{
+    background-color: white;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    border-top: 70px solid #e02b2b;
+    border-bottom: 50px solid #e02b2b;
+    border-right: 50px solid #e02b2b;
+    border-left: 50px solid #e02b2b;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px #333;
+}
 #container {
-    width : 1020px;
-    height: 760px;
+    
+    /* original width : 1020px; */
+    width: 744px;
+    /* original height 760px; */
+    height: 560px;
     padding: 0;
-    border: thin solid black;
+    border: 4px solid rgb(39, 39, 39);
     display: flex;
     flex-wrap: wrap;
-    flex: auto;
+    flex-grow: 0;
+    /* flex: auto; */
+}
+
+#etchText {
+    background-color: #e02b2b;
+    text-align: center;
+    padding: 30px;
+    
+    font-size: 60px;
 }
 
 .grid {
-    user-select: none;
-
-    
-    
-    /* border-right: 1px solid #e4e3e3;
-    border-bottom: 1px solid #e4e3e3; */
+    user-select: none;    
+    border-right: 1px solid #e4e3e3;
+    border-bottom: 1px solid #e4e3e3; 
     margin: 0;
     color: black;
     background-color: white;
