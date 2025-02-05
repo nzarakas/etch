@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'Golden Age';
 /*     src: url('/home/monocube/.local/share/fonts/Golden Age.ttf') format('truetype'); */
-        src: url(../../etch/Golden Age.ttf') format('truetype');
+        src: url(etch/Golden Age.ttf') format('truetype');
 }
 
 body {
