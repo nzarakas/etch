@@ -1,9 +1,11 @@
 @font-face {
-    font-family: 'Golden Age';
-        src: url("etch/Golden Age.woff2") format("woff2"),
-        url("etch/Golden Age.woff") format("woff"),
-        url("etch/Golden Age.ttf") format("truetype");
-/*         src: url(etch/Golden Age.ttf') format('truetype'); */
+    font-family: "Golden Age Regular";
+    src: url("https://db.onlinewebfonts.com/t/d4269475e6f4cf16ad166d5b2e11988b.eot");
+    src: url("https://db.onlinewebfonts.com/t/d4269475e6f4cf16ad166d5b2e11988b.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/d4269475e6f4cf16ad166d5b2e11988b.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/d4269475e6f4cf16ad166d5b2e11988b.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/d4269475e6f4cf16ad166d5b2e11988b.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/d4269475e6f4cf16ad166d5b2e11988b.svg#Golden Age Regular")format("svg");
 }
 
 body {
@@ -16,7 +18,7 @@ body {
     height: 95vh;
     margin: 10px;
     background-image: url('testBackground3.svg');
-    font-family: 'Golden Age', 'Times New Roman', Times, serif;
+    font-family: 'Golden Age Regular', 'Times New Roman', Times, serif;
 }
 #options {
     box-shadow: 4px 4px 10px #333;
@@ -84,7 +86,7 @@ label {
  }
 button{
     background-color: rgb(251, 255, 0);
-    font-family: 'Golden Age', serif;
+    font-family: 'Golden Age Regular', serif;
     height: 35px;
     width: 125px;
     border-top: 1px solid black;
