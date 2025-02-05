@@ -1,8 +1,8 @@
 @font-face {
     font-family: 'Golden Age';
-        src: url("fonts/golden-age.woff2") format("woff2"),
-        url("fonts/golden-age.woff") format("woff"),
-        url("fonts/golden-age.ttf") format("truetype");
+        src: url("etch/Golden Age.woff2") format("woff2"),
+        url("etch/Golden Age.woff") format("woff"),
+        url("etch/Golden Age.ttf") format("truetype");
 /*         src: url(etch/Golden Age.ttf') format('truetype'); */
 }
 
