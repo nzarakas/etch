@@ -14,7 +14,7 @@ body {
     height: 95vh;
     margin: 10px;
     background-image: url('testBackground3.svg');
-    font-family: 'Golden Age Shad', 'Times New Roman', Times, serif;
+    font-family: 'Golden Age', 'Times New Roman', Times, serif;
 }
 #options {
     box-shadow: 4px 4px 10px #333;
